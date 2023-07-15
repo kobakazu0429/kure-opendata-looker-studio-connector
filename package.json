@@ -1,0 +1,45 @@
+{
+  "name": "kure-opendata-looker-studio-connector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "pnpm run build --watch",
+    "build": "vite build",
+    "push": "dscc-scripts connector push_changes",
+    "watch": "dscc-scripts connector watch_changes",
+    "open": "dscc-scripts connector open_script",
+    "open_template": "dscc-scripts connector open_template",
+    "try_production": "dscc-scripts connector try_production",
+    "try_latest": "dscc-scripts connector try_latest",
+    "update_production": "dscc-scripts connector update_production",
+    "test": "vitest",
+    "lint": "pnpm run lint:eslint && pnpm run lint:prettier",
+    "lint:eslint": "eslint \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --fix",
+    "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --write",
+    "generate:api": "openapi2aspida -c aspida.config.cjs"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@google/dscc-scripts": "^1.0.17",
+    "@kobakazu0429/eslint-config-typescript": "^3.1.5",
+    "@types/google-apps-script": "^1.0.64",
+    "@types/node": "^20.4.1",
+    "eslint": "^8.44.0",
+    "openapi2aspida": "^0.21.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.3",
+    "vitest": "^0.33.0"
+  },
+  "dsccConnector": {
+    "production": "",
+    "latest": "AKfycbyqAw0yrIEHf3drKZJdclGLF0ziKpO1oLGNtlV95i_N"
+  },
+  "dependencies": {
+    "aspida": "^1.0.3",
+    "aspida-google-apps-script": "^1.0.3",
+    "dot-prop": "^8.0.1"
+  }
+}

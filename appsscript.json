@@ -1,0 +1,16 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dataStudio": {
+    "name": "kure-opendata-looker-studio-connector",
+    "logoUrl": "https://api.expolis.cloud/docs/opendata/t/kure/favicon/kure-opendata-icon.png",
+    "company": "kobakazu0429",
+    "companyUrl": "https://github.com/kobakazu0429/kure-opendata-looker-studio-connector",
+    "addonUrl": "https://github.com/kobakazu0429/kure-opendata-looker-studio-connector",
+    "supportUrl": "https://github.com/kobakazu0429/kure-opendata-looker-studio-connector/issues",
+    "description": "Get npm package download counts.",
+    "sources": ["npm"]
+  }
+}
